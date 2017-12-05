@@ -25,7 +25,7 @@ SECRET_KEY = 'emmi53$w!l*yswsj(pjazt*kj9-^gz2%l7q59ig*#yw!^l!3&3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [herukoweatherapp.herukoapp.com]
+ALLOWED_HOSTS = [herokuweatherapp.herokuapp.com]
 
 
 # Application definition
@@ -134,11 +134,11 @@ USE_TZ = True
 #STATICFILES_DIRS = [
 #    os.path.join(BASE_DIR, "static"),  # for django uses
 #
-##MIDDLEWARE_CLASSES = (
-##    # Simplified static file serving.
-##    # https://warehouse.python.org/project/whitenoise/
-##    'whitenoise.middleware.WhiteNoiseMiddleware',
-##]
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+MIDDLEWARE_CLASSES = (
+    # Simplified static file serving.
+    # https://warehouse.python.org/project/whitenoise/
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+)
+#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 STATIC_ROOT = os.path.join((BASE_DIR), 'static')
-STATIC_URL = '/static'
+STATIC_URL = '/static/'
