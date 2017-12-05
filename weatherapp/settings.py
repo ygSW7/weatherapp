@@ -25,7 +25,7 @@ SECRET_KEY = 'emmi53$w!l*yswsj(pjazt*kj9-^gz2%l7q59ig*#yw!^l!3&3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [herukoweatherapp.herukoapp.com]
 
 
 # Application definition
@@ -129,8 +129,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATIC_URL = '/static/'                # for url to find the path
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),  # for django uses
-]
+#STATIC_URL = '/static/'                # for url to find the path
+#
+#STATICFILES_DIRS = [
+#    os.path.join(BASE_DIR, "static"),  # for django uses
+#
+##MIDDLEWARE_CLASSES = (
+##    # Simplified static file serving.
+##    # https://warehouse.python.org/project/whitenoise/
+##    'whitenoise.middleware.WhiteNoiseMiddleware',
+##]
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATIC_ROOT = os.path.join((BASE_DIR), 'static')
+STATIC_URL = '/static'

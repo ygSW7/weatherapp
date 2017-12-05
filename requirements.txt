@@ -1,0 +1,16 @@
+certifi==2017.11.5
+chardet==3.0.4
+Django==2.0
+get==0.0.0
+gunicorn==19.7.1
+idna==2.6
+post==0.0.0
+psycopg2==2.7.3.2
+public==0.0.46
+pytz==2017.3
+query-string==0.0.0
+request==0.0.0
+requests==2.18.4
+setupfiles==0.0.50
+urllib3==1.22
+whitenoise==3.3.1
