@@ -29,6 +29,7 @@ DEBUG = True
 TEST_RUNNER = 'python-getting-started.heroku_test_runner.HerokuDiscoverRunner'
 
 ALLOWED_HOSTS = ['herokuweatherapp.herokuapp.com']
+#ALLOWED_HOSTS = ['127.0.0.1']
 
 # Application definition
 

@@ -40,8 +40,8 @@ def fetch_data():
 
     conn.commit()
     cur.close()
-    conn.close()
+    conn.close() # CONNECTION CLOSE
 
-    print("Data Written", datetime.now())
+    print("Data Written", datetime.now()) # DATA INSERTION SUCCESSFUL WITH A TIME STAMP
 
 fetch_data()
