@@ -26,7 +26,7 @@ SECRET_KEY = 'emmi53$w!l*yswsj(pjazt*kj9-^gz2%l7q59ig*#yw!^l!3&3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-TEST_RUNNER = 'weatherapp.heroku_test_runner.HerokuDiscoverRunner'
+TEST_RUNNER = 'python-getting-started.heroku_test_runner.HerokuDiscoverRunner'
 
 ALLOWED_HOSTS = ['herokuweatherapp.herokuapp.com']
 
