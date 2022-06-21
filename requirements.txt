@@ -9,7 +9,7 @@ imageio==2.1.2
 mccabe==0.6.1
 moviepy==0.2.3.2
 music21==4.1.0
-numpy==1.13.3
+numpy==1.22.0
 olefile==0.44
 Pillow==4.3.0
 pipenv==8.3.2
